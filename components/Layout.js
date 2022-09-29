@@ -1,5 +1,5 @@
-import Navbar from "./Navbar"
-import Footer from "./Footer"
+import Navbar from "../components/Navbar"
+import Footer from "../components/Footer"
 import Head from "next/head"
 
 export default function Layout({children}) {
@@ -10,7 +10,7 @@ export default function Layout({children}) {
             <title>PokeNext</title>
         </Head>
         <Navbar />
-        <main>{children}</main>
+        <main className="main-container">{children}</main>
         <Footer />
         </>
     )
